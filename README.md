@@ -85,13 +85,13 @@ create table dnf_service.recharge_key
 ````bash
 nohup java -jar service.jar &
 ````
-9. 本地安装nodejs环境
-10. cd到本项目根目录下编译源码
+8. 本地安装nodejs环境
+9. cd到本项目根目录下编译源码
 ````bash
 npm install
 npm run build
 ````
-7. 服务器创建站点，将本项目源码编译文件放到站点目录中，并配置反向代理防止本项目与后台交互产生跨域问题，以nginx为例。
+10. 服务器创建站点，将本项目源码编译文件放到站点目录中，并配置反向代理防止本项目与后台交互产生跨域问题，以nginx为例。
 ````
 server{
     listen       9002;        # 页面访问端口
@@ -116,6 +116,5 @@ server{
     }
 }
 ````
-8. 访问http://servername:9002即可。
-9. 尝试修改源码中的Home.vue改为自己的客户端地址，重新编译并上传
-10. 尝试扩展一些其他的功能。
+11. 访问http://servername:9002即可。
+12. 补充一下，修改源码中的Home.vue改为自己的客户端下载地址，重新编译并上传。
