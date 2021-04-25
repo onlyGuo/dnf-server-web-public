@@ -56,7 +56,7 @@ https://github.com/onlyGuo/dnf-client-public.git
 推荐以docker方式部署到服务器中，且推荐此类方式。另外推荐一个基于官方openjdk修改的镜像，调整了时区，使其对应中国时区： `guoshengkai/openjdk:8`。
 以下讲解在物理机中的部署方式。
 1. 服务器安装JDK8
-2. 数据库创建用户，要求具有dof数据库的增删改查权限
+2. 数据库创建用户，要求具有dof数据库的增删改查权限，也可以直接使用game用户但不建议。
 3. 数据库`d_taiwan`库下创建`login_notice`表，用于存放登陆器公告
 ````sql
 create table login_notice
