@@ -27,3 +27,5 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 ## 界面预览
 目前已完成主页注册、充值、后台管理（账号管理、角色管理、制卡、查卡）
 
+### 门户主页
+![home](https://github.com/onlyGuo/dnf-server-web-public/blob/main/doc/1_home.jpg?raw=true)
