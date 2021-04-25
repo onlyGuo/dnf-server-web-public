@@ -23,6 +23,9 @@ npm run lint
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
+## 演示地址
+http://8.140.189.172:9002/
+可下载游戏登录玩耍。
 
 ## 界面预览
 目前已完成主页注册、充值、后台管理（账号管理、角色管理、制卡、查卡）
