@@ -30,6 +30,8 @@ http://8.140.189.172:9002/
 配套登陆器：
 https://github.com/onlyGuo/dnf-client-public.git
 
+Email：719348277@qq.com
+
 ## 界面预览
 目前已完成主页注册、充值、后台管理（账号管理、角色管理、制卡、查卡）
 
