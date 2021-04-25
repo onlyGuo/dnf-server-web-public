@@ -27,6 +27,9 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 http://8.140.189.172:9002/
 可下载游戏登录玩耍。
 
+配套登陆器：
+https://github.com/onlyGuo/dnf-client-public.git
+
 ## 界面预览
 目前已完成主页注册、充值、后台管理（账号管理、角色管理、制卡、查卡）
 
@@ -121,3 +124,5 @@ server{
 ````
 11. 访问http://servername:9002即可。
 12. 补充一下，修改源码中的Home.vue改为自己的客户端下载地址，重新编译并上传。
+
+
