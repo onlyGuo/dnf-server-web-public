@@ -30,6 +30,8 @@ http://8.140.189.172:9002/
 配套登陆器：
 https://github.com/onlyGuo/dnf-client-public.git
 
+配套后台系统：
+https://github.com/onlyGuo/dnf-server-public.git
 Email：719348277@qq.com
 
 ## 界面预览
@@ -87,19 +89,14 @@ create table dnf_service.recharge_key
     use_time    DATETIME(19) null comment '使用时间'
 );
 ````
-5. 修改service.jar/application.yml文件，修改数据库地址，数据库用户名，数据库密码等。
-6. 修改service.jar/application.yml文件，设置短信发送服务的`access-key-id`和`access-secret`
-7. 上传service.jar到服务器，执行以下命令启动后台服务(默认端口为9001，可以在`application.yml`中自定义)
-````bash
-nohup java -jar service.jar &
-````
-8. 本地安装nodejs环境
-9. cd到本项目根目录下编译源码
+5. 安装后台服务：https://github.com/onlyGuo/dnf-server-public.git
+6. 本地安装nodejs环境
+7. cd到本项目根目录下编译源码
 ````bash
 npm install
 npm run build
 ````
-10. 服务器创建站点，将本项目源码编译文件放到站点目录中，并配置反向代理防止本项目与后台交互产生跨域问题，以nginx为例。
+8. 服务器创建站点，将本项目源码编译文件放到站点目录中，并配置反向代理防止本项目与后台交互产生跨域问题，以nginx为例。
 ````
 server{
     listen       9002;        # 页面访问端口
@@ -124,7 +121,7 @@ server{
     }
 }
 ````
-11. 访问http://servername:9002即可。
-12. 补充一下，修改源码中的Home.vue改为自己的客户端下载地址，重新编译并上传。
+9. 访问http://servername:9002即可。
+10. 补充一下，修改源码中的Home.vue改为自己的客户端下载地址，重新编译并上传。
 
 
