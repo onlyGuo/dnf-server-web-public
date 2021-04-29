@@ -52,6 +52,10 @@
                             <el-menu-item index="/manager/keys">卡密管理</el-menu-item>
 <!--                            <el-menu-item index="/manager/k-logs">充值历史</el-menu-item>-->
                         </el-submenu>
+                        <el-menu-item index="/manager/databases">
+                           <i class="el-icon-magic-stick"></i>
+                           <span slot="title">数据库管理</span>
+                        </el-menu-item>
                     </el-scrollbar>
                 </el-menu>
             </el-aside>

@@ -4,11 +4,14 @@ import router from './router'
 import Axios from 'axios';
 import ElementUI, {Message} from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
+import VueCodemirror from 'vue-codemirror'
+import 'codemirror/lib/codemirror.css'
+
+Vue.use(ElementUI);
+Vue.use(VueCodemirror);
+
 
 Vue.config.productionTip = false
-Vue.use(ElementUI);
-
-
 /**
  * 全局数组删除操作
  * @param val

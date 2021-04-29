@@ -48,6 +48,9 @@ const routes = [
             }, {
                 path: '/manager/k-logs',
                 component: () => import('../views/manager/MgrKLogs'),
+            }, {
+                path: '/manager/databases',
+                component: () => import('../views/manager/Databases'),
             }
         ]
     }
