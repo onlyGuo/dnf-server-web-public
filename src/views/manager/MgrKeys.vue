@@ -179,7 +179,7 @@ export default {
         },
         createKey(){
             this.loadingCreateKey = true
-            this.createFrom.faceName = this.itemOptions.find(val=>val.code === this.createFrom.face).name
+            this.createFrom.faceName = this.createFrom.type == 0 ? '点券' : this.itemOptions.find(val=>val.code === this.createFrom.face).name
             this.ser.post("keys", this.createFrom).then(() => {
                 this.$message.success("制卡成功");
                 this.showCreate = false;
