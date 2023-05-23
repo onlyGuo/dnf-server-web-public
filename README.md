@@ -1,5 +1,7 @@
 # dnf-server-web
 
+> 先给大家推荐一个好玩的网站MyChatGPT（免梯子，国内直接用，不需要OpenAI账号）：https://chat.icoding.ink/
+
 ## Project setup
 ```
 npm install
